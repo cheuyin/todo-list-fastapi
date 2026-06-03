@@ -16,3 +16,12 @@ Content-Type: application/json
   "description": "Go to Walmart and buy some groceries",
   "is_completed": false
 }
+
+###
+
+PATCH {{baseurl}}/todos/a4d6ebef-5640-435f-8295-6ed3bb9874b9
+Content-Type: application/json
+
+{
+  "is_completed": true
+}
