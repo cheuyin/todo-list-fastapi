@@ -1,0 +1,18 @@
+@baseurl = http://127.0.0.1:8000 
+
+GET {{baseurl}}/todos
+
+###
+
+GET {{baseurl}}/todos/22332bf0-56d0-4dd7-8ebd-3677e24b9698
+
+###
+
+POST {{baseurl}}/todos
+Content-Type: application/json
+
+{
+  "title": "Make breakfast",
+  "description": "Go to Walmart and buy some groceries",
+  "is_completed": false
+}
