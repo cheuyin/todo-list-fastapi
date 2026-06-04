@@ -26,3 +26,5 @@ htmlcov/
 # IDE-specific (Optional)
 .vscode/
 .idea/
+
+store/
