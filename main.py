@@ -43,3 +43,11 @@ def update_todo(todo_id: str, todo: TodoUpdate):
         return todoRepo.update(Todo(**existing_todo_dict))
     except KeyError:
         raise HTTPException(status_code=404, detail="Item not found")
+
+
+@app.delete("/todos/{todo_id}", response_model=Todo)
+def delete_todo(todo_id: str):
+    try:
+        return todoRepo.delete(todo_id)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="Item not found")
